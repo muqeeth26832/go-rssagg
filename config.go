@@ -9,6 +9,7 @@ import (
 
 type Env struct {
 	PORT string `env:"PORT,required"`
+	DB_URL string `env:"DB_URL,required"`
 }
 
 func EnvConfig() *Env {
